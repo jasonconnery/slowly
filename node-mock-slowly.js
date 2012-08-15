@@ -8,7 +8,7 @@ http.createServer(function(req, res) {
 	setTimeout( function() {
 		console.log("[Slowly.fake END " + req.method + " : " + req.url + " ]");
 		res.end("Done");
-	} , 40000 );
+	} , 20000 );
 		
 }).listen(port);
 
